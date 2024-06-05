@@ -1,8 +1,8 @@
 # Project To Do List
 
 ## Product Definition
-1. Create user story for first version 
-2. Create PRD
+~~1. Create user story for first version~~ 
+~~2. Create PRD~~
 3. Create Architecture Design Document
 4. Identify what data fields are required 
 
