@@ -1,0 +1,19 @@
+- Project Documentation
+    - Product Documentation
+        - UX Documentation
+            - User Story
+            - User Personas  
+            - User Scenarios
+        - PRD: Functional & Non Functional Requirements
+        - Architecture Design Documentation
+            - High Level Description of how different components communicate. 
+        - Test Design Documentation
+            - Test Plan 
+            - Test Cases
+    - Process Documentation
+        - Roadmaps
+            - Strategy Roadmap
+            - Technical Roadmap
+            - Release Roadmap
+        - Metrics
+        - Standards 
