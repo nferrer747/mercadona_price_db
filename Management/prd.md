@@ -8,3 +8,7 @@
 ## Non-functional requirements
 1. We should update the product database at least once a day.
 2. Initially we should support at most 1000 concurrent users.
+
+## Required Data Fields
+* Price Date
+* Price
