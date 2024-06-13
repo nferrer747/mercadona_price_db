@@ -2,7 +2,6 @@ import requests
 import xml.etree.ElementTree as ET
 import re
 import json
-import configparser
 import os
 
 # Import config file

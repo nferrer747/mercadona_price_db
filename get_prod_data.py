@@ -46,11 +46,11 @@ prod_id_list = prod_url_getter.parse_sitemap()
 n_products = len(prod_id_list)
 print(f'Total products to get: {n_products}')
 
-output_storage = []
+output_storage = {}
 
 wait = 0
 i = 0
-while i < (n_products - 1):
+while i < n_products:
     prod_key = prod_id_list[i]
     api_base_url = f'https://tienda.mercadona.es/api/products/{prod_key}/'
     
@@ -120,11 +120,10 @@ while i < (n_products - 1):
         
     wait = 0
     i += 1
-    output_storage.append(deepcopy(current_product.__dict__))
+    output_storage[prod_key] = deepcopy(current_product.__dict__)
 
-t_end = time.perf_counter()#
-
-with open('prod_data.json', 'wb') as f:
-    f.write(output_storage)
-
+t_end = time.perf_counter()
 print(f'Time elapsed: {t_end - t_start}')
+
+with open('prod_data.json', 'w', encoding='utf-8') as f:
+    json.dump(output_storage, f, ensure_ascii=False, indent = 4)     
