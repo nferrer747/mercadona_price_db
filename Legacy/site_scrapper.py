@@ -12,8 +12,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import selenium.common.exceptions as sel_ex
 
 # Import config file
-config = configparser.ConfigParser()
-config.read("config.ini")
+with open("config.json") as f:
+    config = json.load(f)
 
 # Get list of product URLs
 prod_url_map = prod_url_getter.parse_sitemap()
